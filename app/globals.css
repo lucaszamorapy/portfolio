@@ -124,7 +124,7 @@ h3 {
 }
 
 body {
-  font-family: var(--font-geist-sans);
+  font-family: var(--font-cinzel);
   background-color: var(--background);
   position: relative;
   min-height: 100vh;
@@ -136,7 +136,7 @@ body::before {
   inset: 0;
   background-image: url("/noise.png");
   background-repeat: repeat;
-  opacity: 0.05; /* bem sutil */
+  opacity: 0.05;
   pointer-events: none;
   z-index: 0;
 }

@@ -20,7 +20,7 @@ export default function Hero() {
 
           <h1
             style={{ transform: `translateY(${offsetTitle}px)` }}
-            className="flex text-witcher-text items-center justify-center gap-2 mt-4 text-4xl sm:text-6xl font-bold leading-tight animate-hero [animation-delay:0.2s]"
+            className="flex text-witcher-text items-center justify-center gap-5 mt-4 text-4xl sm:text-6xl font-bold leading-tight animate-hero [animation-delay:0.2s]"
           >
             Lucas
             <span className="text-primary animate-hero [animation-delay:0.2s]">
@@ -35,7 +35,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex gap-4 justify-center">
-            <Button variant="scroll">
+            <Button>
               <Link href={"#about"}>Começar caçada</Link>
             </Button>
           </div>
