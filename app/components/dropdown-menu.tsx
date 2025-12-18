@@ -1,10 +1,12 @@
 import { navItems } from "@/utils/lists";
 import Link from "next/link";
-import React from "react";
 
-const DropDownMenu = () => {
+const DropDownMenu = ({ open }: { open: boolean }) => {
   return (
-    <section className="glass h-screen flex flex-col items-center">
+    <section
+      data-open={open}
+      className="bg-background mobile-menu  fixed left-0 right-0 bottom-0 top-25.75 z-40"
+    >
       <nav className="mt-10">
         <ul className="items-center flex flex-col justify-between h-full gap-10">
           {navItems.map((n) => {

@@ -26,8 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${cinzel.variable} antialiased`}>
-        <Header />
-        {children}
+        <Header>{children}</Header>
       </body>
     </html>
   );

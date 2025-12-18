@@ -19,6 +19,32 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
+        scroll: `
+              cursor-pointer
+              bg-secondary
+              text-secondary-foreground
+
+              border
+              border-secondary/60
+
+              shadow-[0_4px_0_rgba(0,0,0,0.35),_0_8px_24px_rgba(0,0,0,0.4)]
+              
+              before:content-['']
+              before:absolute
+              before:inset-0
+              before:rounded-md
+              before:bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.15),transparent_60%)]
+
+              hover:bg-secondary/90
+              hover:shadow-[0_2px_0_rgba(0,0,0,0.35),_0_6px_18px_rgba(0,0,0,0.45)]
+              
+              active:translate-y-[2px]
+              active:shadow-[0_1px_0_rgba(0,0,0,0.4)]
+
+              transition-all
+              relative
+              overflow-hidden
+            `,
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
@@ -53,7 +79,9 @@ function Button({
       data-slot="button"
       data-variant={variant}
       data-size={size}
-      className={cn(buttonVariants({ variant, size, className }))}
+      className={`uppercase button-contract ${cn(
+        buttonVariants({ variant, size, className })
+      )}`}
       {...props}
     />
   );
