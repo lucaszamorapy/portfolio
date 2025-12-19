@@ -1,17 +1,13 @@
 "use client";
-import Link from "next/link";
-import DividerQuen from "./divider-quen";
 import { Button } from "./ui/button";
 import { useParallax } from "../hooks/use-parallax";
+import { Swords } from "lucide-react";
+import { scrollToSection } from "@/utils/global";
 
 export default function Hero() {
   const offsetTitle = useParallax(0.04);
-  const offsetRune = useParallax(0.02);
   return (
     <>
-      <div style={{ transform: `translateY(${offsetRune}px)` }}>
-        <DividerQuen />
-      </div>
       <section className="relative flex items-center justify-center text-zinc-400 overflow-hidden">
         <div className="relative z-10 max-w-4xl px-6 text-center">
           <span className="text-sm tracking-widest text-witcher-text uppercase">
@@ -35,8 +31,9 @@ export default function Hero() {
           </p>
 
           <div className="mt-10 flex gap-4 justify-center">
-            <Button>
-              <Link href={"#about"}>Começar caçada</Link>
+            <Button onClick={() => scrollToSection("about")}>
+              <Swords />
+              Começar caçada
             </Button>
           </div>
         </div>

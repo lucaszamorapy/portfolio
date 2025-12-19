@@ -92,7 +92,7 @@ const Header = ({ children }: { children: React.ReactNode }) => {
             </span>
           </nav>
         </div>
-        <DropDownMenu open={openDropDown} />
+        <DropDownMenu open={openDropDown} setOpen={setOpenDropDown} />
       </section>
       {children}
     </>

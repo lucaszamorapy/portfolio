@@ -1,7 +1,21 @@
+"use client";
+import { scrollToSection } from "@/utils/global";
 import { navItems } from "@/utils/lists";
-import Link from "next/link";
 
-const DropDownMenu = ({ open }: { open: boolean }) => {
+interface DropDownMenuProps {
+  open: boolean;
+  setOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const DropDownMenu = ({ open, setOpen }: DropDownMenuProps) => {
+  const linkToPage = (navigation: string, type: "external" | "internal") => {
+    if (type === "external") {
+      window.open(navigation);
+    } else {
+      scrollToSection(navigation);
+    }
+    setOpen(false);
+  };
   return (
     <section
       data-open={open}
@@ -12,14 +26,14 @@ const DropDownMenu = ({ open }: { open: boolean }) => {
           {navItems.map((n) => {
             return (
               <li key={n.name}>
-                <Link
+                <span
                   className="font-title text-witcher-text container-slash"
-                  href={n.navigation}
+                  onClick={() => linkToPage(n.navigation, n.type)}
                 >
                   <span className="slash-ghost">{n.name}</span>
                   <span className="link-slash">{n.name}</span>
                   <span className="link-slash">{n.name}</span>
-                </Link>
+                </span>
               </li>
             );
           })}
