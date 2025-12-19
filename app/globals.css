@@ -208,10 +208,7 @@ body::before {
     transform: translateY(-20px);
     pointer-events: none;
     background-color: var(--background);
-    transition: opacity 300ms ease, transform 300ms ease,
-      backdrop-filter 300ms ease;
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(0px);
+    transition: opacity 300ms ease, transform 300ms ease;
   }
 
   .mobile-menu[data-open="true"] {
