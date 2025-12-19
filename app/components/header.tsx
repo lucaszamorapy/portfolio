@@ -42,7 +42,7 @@ const Header = ({ children }: { children: React.ReactNode }) => {
                 return (
                   <li key={n.name}>
                     <Link
-                      className="font-title text-witcher-text container-slash"
+                      className="font-title text-white container-slash"
                       href={n.navigation}
                       onClick={(
                         e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
@@ -64,7 +64,7 @@ const Header = ({ children }: { children: React.ReactNode }) => {
             >
               <Sword
                 className={`
-      absolute w-5 h-5 text-witcher-text scale-x-150
+      absolute w-5 h-5 text-white scale-x-150
       transition-all duration-300 ease-in-out
       ${openDropDown ? "rotate-45" : "rotate-[60] -mb-1 -translate-y-2"}
     `}
@@ -72,7 +72,7 @@ const Header = ({ children }: { children: React.ReactNode }) => {
 
               <Sword
                 className={`
-      absolute w-5 h-5 text-witcher-text scale-x-150
+      absolute w-5 h-5 text-white scale-x-150
       transition-all duration-300 ease-in-out
       ${openDropDown ? "opacity-0 scale-0" : "rotate-[60] -mb-1"}
     `}
@@ -80,7 +80,7 @@ const Header = ({ children }: { children: React.ReactNode }) => {
 
               <Sword
                 className={`
-      absolute w-5 h-5 text-witcher-text 
+      absolute w-5 h-5 text-white 
       transition-all duration-300 ease-in-out
       ${
         openDropDown

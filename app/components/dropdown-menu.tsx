@@ -8,12 +8,8 @@ interface DropDownMenuProps {
 }
 
 const DropDownMenu = ({ open, setOpen }: DropDownMenuProps) => {
-  const linkToPage = (navigation: string, type: "external" | "internal") => {
-    if (type === "external") {
-      window.open(navigation);
-    } else {
-      scrollToSection(navigation);
-    }
+  const linkToPage = (navigation: string) => {
+    scrollToSection(navigation);
     setOpen(false);
   };
   return (
@@ -27,8 +23,8 @@ const DropDownMenu = ({ open, setOpen }: DropDownMenuProps) => {
             return (
               <li key={n.name}>
                 <span
-                  className="font-title text-witcher-text container-slash"
-                  onClick={() => linkToPage(n.navigation, n.type)}
+                  className="font-title text-white container-slash"
+                  onClick={() => linkToPage(n.navigation)}
                 >
                   <span className="slash-ghost">{n.name}</span>
                   <span className="link-slash">{n.name}</span>

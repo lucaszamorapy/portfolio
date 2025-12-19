@@ -1,9 +1,9 @@
 "use client";
 import DividerQuen from "./divider-quen";
-import Image from "next/image";
 import { Button } from "./ui/button";
 import { Download, Github } from "lucide-react";
 import Link from "next/link";
+import AboutCard from "./about-card";
 
 const About = () => {
   return (
@@ -12,36 +12,13 @@ const About = () => {
       <section id="about" className="flex items-center flex-col">
         <div className="container">
           <div className="grid items-center grid-cols-1 lg:grid-cols-[350px_1fr] lg:items-start gap-10 lg:gap-24">
-            <div className="flex flex-col gap-5">
-              <div className="relative lg:w-87.5 h-100 border border-secondary/40">
-                <Image
-                  src="/lucas_terno.png"
-                  alt="Foto Perfil"
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 300px"
-                  className="object-cover shadow-[0_0_40px_rgba(212,175,55,0.15)]"
-                />
-              </div>
-              <span className="text-witcher-text text-center text-sm lg:text-left">
-                Ouça a <span className="text-primary">trilha sonora</span> que
-                me inspira enquanto desenvolvo:
-              </span>
-              <iframe
-                src="https://open.spotify.com/embed/playlist/67YTZ2cx1tDL2G5Lftub6h?theme=0"
-                width="100%"
-                height="152"
-                frameBorder="0"
-                allow="encrypted-media;"
-                className="rounded-lg shadow-[0_0_30px_rgba(212,175,55,0.15)]"
-              />
-            </div>
-
+            <AboutCard />
             <div className="flex flex-col gap-10">
-              <h1 className="flex text-witcher-text gap-5 text-4xl sm:text-6xl  font-bold leading-tight ">
+              <h1 className="flex text-white gap-5 text-4xl sm:text-6xl  font-bold leading-tight ">
                 Sobre
                 <span className="text-primary ">Mim</span>
               </h1>
-              <p className="text-witcher-text ">
+              <p className="text-white ">
                 Sou desenvolvedor Full Stack, com foco e especialização em
                 Next.js, atuando na área há cerca de 2 a 3 anos. Ao longo desse
                 período, venho consolidando minha experiência no desenvolvimento
@@ -58,8 +35,8 @@ const About = () => {
                 <br />
                 Além do desenvolvimento, sou apaixonado por videogames,
                 especialmente pelos títulos da{" "}
-                <span className="text-primary">Naughty Dog</span> e{" "}
-                <span className="text-primary">CD Projekt Red</span>. Esses
+                <span className="text-secondary">Naughty Dog</span> e{" "}
+                <span className="text-secondary">CD Projekt Red</span>. Esses
                 universos reforçaram em mim a importância da experiência do
                 usuário, da atenção aos detalhes e da construção de soluções bem
                 pensadas — princípios que levo para o meu trabalho como
