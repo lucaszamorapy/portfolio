@@ -219,7 +219,6 @@ body::before {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
-    backdrop-filter: blur(8px);
   }
 
   @keyframes quen-pulse {
