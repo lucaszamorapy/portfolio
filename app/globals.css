@@ -204,21 +204,22 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-
     opacity: 0;
     transform: translateY(-20px);
     pointer-events: none;
-
+    background-color: var(--background);
     transition: opacity 300ms ease, transform 300ms ease,
       backdrop-filter 300ms ease;
-
     backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
   }
 
   .mobile-menu[data-open="true"] {
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
   }
 
   @keyframes quen-pulse {
