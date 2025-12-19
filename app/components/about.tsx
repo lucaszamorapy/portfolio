@@ -37,13 +37,11 @@ const About = () => {
             </div>
 
             <div className="flex flex-col gap-10">
-              <h1 className="flex text-witcher-text gap-5 text-4xl sm:text-6xl font-bold leading-tight animate-hero [animation-delay:0.2s]">
+              <h1 className="flex text-witcher-text gap-5 text-4xl sm:text-6xl  font-bold leading-tight ">
                 Sobre
-                <span className="text-primary animate-hero [animation-delay:0.2s]">
-                  Mim
-                </span>
+                <span className="text-primary ">Mim</span>
               </h1>
-              <p className="text-witcher-text">
+              <p className="text-witcher-text ">
                 Sou desenvolvedor Full Stack, com foco e especialização em
                 Next.js, atuando na área há cerca de 2 a 3 anos. Ao longo desse
                 período, venho consolidando minha experiência no desenvolvimento

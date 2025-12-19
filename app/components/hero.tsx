@@ -16,15 +16,13 @@ export default function Hero() {
 
           <h1
             style={{ transform: `translateY(${offsetTitle}px)` }}
-            className="flex text-witcher-text items-center justify-center gap-5 mt-4 text-4xl sm:text-6xl font-bold leading-tight animate-hero [animation-delay:0.2s]"
+            className="flex text-witcher-text items-center justify-center gap-5 mt-4 text-4xl sm:text-6xl font-bold leading-tight "
           >
             Lucas
-            <span className="text-primary animate-hero [animation-delay:0.2s]">
-              Zamora
-            </span>
+            <span className="text-primary ">Zamora</span>
           </h1>
 
-          <p className="mt-6 text-witcher-text text-md animate-hero [animation-delay:0.2s] lg:text-lg">
+          <p className="mt-6 text-witcher-text text-md lg:text-lg">
             Técnólogo em Análise e Desenvolvimento de Sistemas, Desenvolvedor
             Full Stack especializado em transformar sistemas caóticos em
             soluções eficientes.

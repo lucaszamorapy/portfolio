@@ -119,8 +119,10 @@
 
 h1,
 h2,
-h3 {
-  font-family: var(--font-cinzel);
+h3,
+p {
+  animation: fade-rise 1.2s ease-out forwards;
+  animation-delay: 0.2s;
 }
 
 body {
@@ -261,10 +263,6 @@ body::before {
       transform: translateY(0);
       filter: blur(0);
     }
-  }
-
-  .animate-hero {
-    animation: fade-rise 1.2s ease-out forwards;
   }
 
   @keyframes line-glow {
