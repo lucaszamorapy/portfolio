@@ -1,18 +1,29 @@
-"use server"
-import { Contacts } from "@/app/generated/prisma/client";
+"use server";
+
 import { prisma } from "@/app/lib/db";
-//import { createContactMock } from "@/app/mockup/contact";
 
+interface CreateContactParams {
+  contact_id: number;
+  name: string;
+  email: string;
+  phone: string;
+  message: string;
+  created_at: Date;
+}
 
-export const createContact = async (data: Contacts) => {
-  //const data = createContactMock
+export const createContact = async (
+  data: CreateContactParams
+) => {
   try {
     const contact = await prisma.contacts.create({
       data,
     });
+
     return contact;
   } catch (error) {
     console.error("Erro ao criar contato:", error);
-    throw new Error("Erro ao enviar o seu contato: " + (error as Error).message);
+    throw new Error(
+      "Erro ao enviar o seu contato: " + (error as Error).message
+    );
   }
-}
+};
