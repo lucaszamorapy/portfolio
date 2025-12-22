@@ -20,6 +20,7 @@ const AboutCard = () => {
           src="/lucas_terno.png"
           alt="Foto Perfil"
           fill
+          sizes="(max-width: 768px) 100vw, 50vw"
           className="
         object-cover
         grayscale-20

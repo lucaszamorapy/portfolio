@@ -1,3 +1,25 @@
+import {
+  siHtml5,
+  siCss,
+  siJavascript,
+  siTypescript,
+  siReact,
+  siNextdotjs,
+  siShadcnui,
+  siVuedotjs,
+  siNuxt,
+  siVuetify,
+  siLit,
+  siTailwindcss,
+  siTsnode,
+  siExpress,
+  siSequelize,
+  siDotnet,
+  siPython,
+  siMysql,
+  siDocker,
+} from "simple-icons/icons";
+
 interface NavItem {
   name: string;
   navigation: string;
@@ -18,7 +40,7 @@ export const navItems: NavItem[] = [
   },
   {
     name: "Sinais",
-    navigation: "tecnologies",
+    navigation: "technologies",
   },
   {
     name: "Contato",
@@ -85,4 +107,31 @@ export const projectsItems: ProjectsItem[] = [
     imageUrl: "/projects/ubank.jpg",
     techs: ["React", "JavaScript", "TailwindCSS", "Figma"],
   },
+];
+
+export interface TechItem {
+  name: string;
+  icon: string;
+}
+
+export const techsList: TechItem[] = [
+  { name: "HTML", icon: siHtml5.svg },
+  { name: "CSS", icon: siCss.svg },
+  { name: "JavaScript", icon: siJavascript.svg },
+  { name: "TypeScript", icon: siTypescript.svg },
+  { name: "React", icon: siReact.svg },
+  { name: "Next", icon: siNextdotjs.svg },
+  { name: "ShadCN UI", icon: siShadcnui.svg },
+  { name: "Vue", icon: siVuedotjs.svg },
+  { name: "Nuxt", icon: siNuxt.svg },
+  { name: "Vuetify", icon: siVuetify.svg },
+  { name: "Lit", icon: siLit.svg },
+  { name: "TailwindCSS", icon: siTailwindcss.svg },
+  { name: "Node TS", icon: siTsnode.svg },
+  { name: "Express", icon: siExpress.svg },
+  { name: "Sequelize", icon: siSequelize.svg },
+  { name: ".NET", icon: siDotnet.svg },
+  { name: "Python", icon: siPython.svg },
+  { name: "MySQL", icon: siMysql.svg },
+  { name: "Docker", icon: siDocker.svg },
 ];
