@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Cinzel, Geist } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
+import { Toaster } from "sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,7 +15,7 @@ export const cinzel = Cinzel({
   variable: "--font-cinzel",
 });
 export const metadata: Metadata = {
-  title: "Zamora Portfólio - Home",
+  title: "Lucas Zamora Portfólio",
   description: "Home da página",
 };
 
@@ -27,6 +28,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${cinzel.variable} antialiased`}>
         <Header>{children}</Header>
+        <Toaster />
       </body>
     </html>
   );

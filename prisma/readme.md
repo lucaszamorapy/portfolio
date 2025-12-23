@@ -48,3 +48,6 @@ npx prisma migrate dev # Cria migrations (DEV)
 npx prisma migrate deploy # Aplica migrations (PROD)
 npx prisma migrate reset # Reseta banco (DEV)
 npx prisma studio # Interface visual
+
+**IMPORTANTE**
+Na build colocar o script prisma generate, assim ao fazer npm run build ele já vai gerar a pasta generated do prisma

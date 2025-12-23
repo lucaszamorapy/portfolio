@@ -7,3 +7,4 @@ export const scrollToSection = (id: string) => {
     block: "start",
   });
 };
+

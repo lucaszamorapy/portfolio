@@ -9,8 +9,8 @@ function Input({ className, type, ...props }: React.ComponentProps<"input">) {
       className={cn(
         `
         h-10 w-full min-w-0
-        border border-secondary/60
-        bg-background-secondary/40
+        border border-secondary/40
+        bg-background-secondary
         px-3 py-2
         text-white placeholder:text-white/40
         shadow-inner
