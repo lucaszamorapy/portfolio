@@ -1,3 +1,4 @@
+import { Github, Instagram, Linkedin, LucideIcon } from "lucide-react";
 import {
   siHtml5,
   siCss,
@@ -135,3 +136,23 @@ export const techsList: TechItem[] = [
   { name: "MySQL", icon: siMysql.svg },
   { name: "Docker", icon: siDocker.svg },
 ];
+
+export interface FooterItem {
+  link: string;
+  icon: LucideIcon;
+}
+
+export const footerItems: FooterItem[] = [
+  {
+    link: "https://github.com/lucaszamorapy",
+    icon: Github,
+  },
+  {
+    link: "https://www.instagram.com/luscas.zamora",
+    icon: Instagram,
+  },
+  {
+    link: "https://www.linkedin.com/in/lucas-nicola-zamora/",
+    icon: Linkedin,
+  }
+]

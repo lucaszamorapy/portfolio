@@ -25,7 +25,7 @@ const Header = ({ children }: { children: React.ReactNode }) => {
   };
   return (
     <>
-      <section className="glass sticky top-0 z-50 mb-10">
+      <section className="bg-background-secondary sticky top-0 z-50 mb-10 border-b border-secondary/40">
         <div className="container w-full">
           <nav className="flex justify-between items-center">
             <Link href={"/"}>

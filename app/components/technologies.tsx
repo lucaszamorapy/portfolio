@@ -41,6 +41,9 @@ const Technologies = () => {
               }
             />
           </div>
+          {techs.length === 0 && (
+            <p className="text-white">Nenhuma tecnologia encontrada.</p>
+          )}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2 lg:gap-10 mt-10">
             {techs.map((p: TechItem) => (
               <article

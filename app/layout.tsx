@@ -3,6 +3,7 @@ import { Cinzel, Geist } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import { Toaster } from "sonner";
+import Footer from "./components/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,6 +29,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} ${cinzel.variable} antialiased`}>
         <Header>{children}</Header>
+        <Footer />
         <Toaster />
       </body>
     </html>

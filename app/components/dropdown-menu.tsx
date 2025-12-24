@@ -15,7 +15,7 @@ const DropDownMenu = ({ open, setOpen }: DropDownMenuProps) => {
   return (
     <section
       data-open={open}
-      className="bg-background mobile-menu fixed left-0 right-0 bottom-0 top-25.75 z-40"
+      className="bg-background-secondary mobile-menu fixed left-0 right-0 bottom-0 top-25 z-40"
     >
       <nav className="mt-10">
         <ul className="items-center flex flex-col justify-between h-full gap-10">
