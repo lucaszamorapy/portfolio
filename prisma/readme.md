@@ -20,6 +20,7 @@ Instale o **Prisma CLI** e o **Prisma Client** (devem estar na mesma versão):
 
 ```bash
 npm install -D prisma
+npx prisma init
 npm install @prisma/client
 ```
 
@@ -27,7 +28,7 @@ npm install @prisma/client
 
 prisma/
 ├─ schema.prisma
-├─ prisma.config.ts
+├─ prisma.config.ts (não é obrigatório)
 └─ migrations/
 app/
 └─ lib/
